@@ -1,7 +1,7 @@
 import { test } from '@playwright/test';
 import fs from 'fs';
 
-test('Download quotes from Goodreads pages 10-100', async ({ page }) => {
+test.skip('Download quotes from Goodreads pages 10-100', async ({ page }) => {
   const allQuotes: { text: string | undefined; author: string | undefined }[] = [];
 
   for (let i = 10; i <= 100; i++) {
